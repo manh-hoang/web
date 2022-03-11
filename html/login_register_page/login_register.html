@@ -1,228 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuickSnacks</title>
     <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="../../css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="../../css/mdb.min.css" rel="stylesheet">
-  <style>
-      body {
-    margin: 0;
-    color: #6a6f8c;
-    background: #c8c8c8;
-    font: 600 16px/18px 'Open Sans', sans-serif
-}
-.row{
-    margin: 0 auto;
-    margin-top: 2%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.login-box {
-    width: 100%;
-    margin: auto;
-    max-width: 525px;
-    min-height: 670px;
-    position: relative;
-    background: url(https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80) no-repeat center;
-    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
-}
-
-.login-snip {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    padding: 90px 70px 50px 70px;
-    background: rgba(0, 77, 77, .9)
-}
-
-.login-snip .login,
-.login-snip .sign-up-form {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-    transition: all .4s linear
-}
-
-.login-snip .sign-in,
-.login-snip .sign-up,
-.login-space .group .check {
-    display: none
-}
-
-.login-snip .tab,
-.login-space .group .label,
-.login-space .group .button {
-    text-transform: uppercase
-}
-
-.login-snip .tab {
-    font-size: 22px;
-    margin-right: 15px;
-    padding-bottom: 5px;
-    margin: 0 15px 10px 0;
-    display: inline-block;
-    border-bottom: 2px solid transparent
-}
-
-.login-snip .sign-in:checked+.tab,
-.login-snip .sign-up:checked+.tab {
-    color: #fff;
-    border-color: #1161ee
-}
-
-.login-space {
-    min-height: 345px;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d
-}
-
-.login-space .group {
-    margin-bottom: 15px
-}
-
-.login-space .group .label,
-.login-space .group .input,
-.login-space .group .button {
-    width: 100%;
-    color: #fff;
-    display: block
-}
-
-.login-space .group .input,
-.login-space .group .button {
-    border: none;
-    padding: 15px 20px;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, .1);
-    outline: none;
-   
-}
-
-.login-space .group input[data-type="password"] {
-    -webkit-text-security: circle;
-    outline: none;
-    
-}
-
-.login-space .group .label {
-    color: #aaa;
-    font-size: 12px
-}
-
-.login-space .group .button {
-    background: #1161ee
-}
-
-.login-space .group label .icon {
-    width: 15px;
-    height: 15px;
-    border-radius: 2px;
-    position: relative;
-    display: inline-block;
-    background: rgba(255, 255, 255, .1)
-}
-
-.login-space .group label .icon:before,
-.login-space .group label .icon:after {
-    content: '';
-    width: 10px;
-    height: 2px;
-    background: #fff;
-    position: absolute;
-    transition: all .2s ease-in-out 0s
-}
-
-.login-space .group label .icon:before {
-    left: 3px;
-    width: 5px;
-    bottom: 6px;
-    transform: scale(0) rotate(0)
-}
-
-.login-space .group label .icon:after {
-    top: 6px;
-    right: 0;
-    transform: scale(0) rotate(0)
-}
-
-.login-space .group .check:checked+label {
-    color: #fff
-}
-
-.login-space .group .check:checked+label .icon {
-    background: #1161ee
-}
-
-.login-space .group .check:checked+label .icon:before {
-    transform: scale(1) rotate(45deg)
-}
-
-.login-space .group .check:checked+label .icon:after {
-    transform: scale(1) rotate(-45deg)
-}
-
-.login-snip .sign-in:checked+.tab+.sign-up+.tab+.login-space .login {
-    transform: rotate(0)
-}
-
-.login-snip .sign-up:checked+.tab+.login-space .sign-up-form {
-    transform: rotate(0)
-}
-
-*,
-:after,
-:before {
-    box-sizing: border-box
-}
-
-.clearfix:after,
-.clearfix:before {
-    content: '';
-    display: table
-}
-
-.clearfix:after {
-    clear: both;
-    display: block
-}
-
-a {
-    color: inherit;
-    text-decoration: none
-}
-
-.hr {
-    height: 2px;
-    margin: 60px 0 50px 0;
-    background: rgba(255, 255, 255, .2)
-}
-
-.foot {
-    text-align: center
-}
-
-.card {
-    width: 500px;
-    left: 100px
-}
-
-::placeholder {
-    color: #b3b3b3
-}
-  </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../../css/mdb.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            color: #6a6f8c;
+            background: #c8c8c8;
+            font: 600 16px/18px 'Open Sans', sans-serif
+        }
+        
+        .row {
+            margin: 0 auto;
+            margin-top: 2%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .login-box {
+            width: 100%;
+            margin: auto;
+            max-width: 525px;
+            min-height: 670px;
+            position: relative;
+            background: url(https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80) no-repeat center;
+            box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
+           
+        }
+        .login-box{
+            background: darkblue;
+        }
+        
+        .login-snip {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            padding: 90px 70px 50px 70px;
+            background: rgba(0, 77, 77, .9)
+        }
+        
+        .login-snip .login,
+        .login-snip .sign-up-form {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            transition: all .4s linear
+        }
+        
+        .login-snip .sign-in,
+        .login-snip .sign-up,
+        .login-space .group .check {
+            display: none
+        }
+        
+        .login-snip .tab,
+        .login-space .group .label,
+        .login-space .group .button {
+            text-transform: uppercase
+        }
+        
+        .login-snip .tab {
+            font-size: 22px;
+            margin-right: 15px;
+            padding-bottom: 5px;
+            margin: 0 15px 10px 0;
+            display: inline-block;
+            border-bottom: 2px solid transparent
+        }
+        
+        .login-snip .sign-in:checked+.tab,
+        .login-snip .sign-up:checked+.tab {
+            color: #fff;
+            border-color: #1161ee
+        }
+        
+        .login-space {
+            min-height: 345px;
+            position: relative;
+            perspective: 1000px;
+            transform-style: preserve-3d
+        }
+        
+        .login-space .group {
+            margin-bottom: 15px
+        }
+        
+        .login-space .group .label,
+        .login-space .group .input,
+        .login-space .group .button {
+            width: 100%;
+            color: #fff;
+            display: block
+        }
+        
+        .login-space .group .input,
+        .login-space .group .button {
+            border: none;
+            padding: 15px 20px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, .1);
+            outline: none;
+        }
+        
+        .login-space .group input[data-type="password"] {
+            -webkit-text-security: circle;
+            outline: none;
+        }
+        
+        .login-space .group .label {
+            color: #aaa;
+            font-size: 12px
+        }
+        
+        .login-space .group .button {
+            background: #1161ee
+        }
+        
+        .login-space .group label .icon {
+            width: 15px;
+            height: 15px;
+            border-radius: 2px;
+            position: relative;
+            display: inline-block;
+            background: rgba(255, 255, 255, .1)
+        }
+        
+        .login-space .group label .icon:before,
+        .login-space .group label .icon:after {
+            content: '';
+            width: 10px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            transition: all .2s ease-in-out 0s
+        }
+        
+        .login-space .group label .icon:before {
+            left: 3px;
+            width: 5px;
+            bottom: 6px;
+            transform: scale(0) rotate(0)
+        }
+        
+        .login-space .group label .icon:after {
+            top: 6px;
+            right: 0;
+            transform: scale(0) rotate(0)
+        }
+        
+        .login-space .group .check:checked+label {
+            color: #fff
+        }
+        
+        .login-space .group .check:checked+label .icon {
+            background: #1161ee
+        }
+        
+        .login-space .group .check:checked+label .icon:before {
+            transform: scale(1) rotate(45deg)
+        }
+        
+        .login-space .group .check:checked+label .icon:after {
+            transform: scale(1) rotate(-45deg)
+        }
+        
+        .login-snip .sign-in:checked+.tab+.sign-up+.tab+.login-space .login {
+            transform: rotate(0)
+        }
+        
+        .login-snip .sign-up:checked+.tab+.login-space .sign-up-form {
+            transform: rotate(0)
+        }
+        
+        *,
+         :after,
+         :before {
+            box-sizing: border-box
+        }
+        
+        .clearfix:after,
+        .clearfix:before {
+            content: '';
+            display: table
+        }
+        
+        .clearfix:after {
+            clear: both;
+            display: block
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+        
+        .hr {
+            height: 2px;
+            margin: 60px 0 50px 0;
+            background: rgba(255, 255, 255, .2)
+        }
+        
+        .foot {
+            text-align: center
+        }
+        
+        .card {
+            width: 500px;
+            left: 100px
+        }
+        
+        #mail {
+            height: 0%;
+        }
+        
+        #myForm #mail ::placeholder {
+            color: grey;
+        }
+    </style>
 </head>
+
 <body>
 
     <div class="row">
@@ -232,19 +242,37 @@ a {
                     <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
                         <div class="login-space">
                             <div class="login">
-                                <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Enter your username" required> </div>
-                                <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Enter your password" required> </div>
+                                <div class="group"> <label for="userName" class="label">Username</label> <input type="text" id="userName" class="input" placeholder="Enter your username" required onblur="userName()"> </div>
+                                <div class="group"> <label for="password" class="label">Password</label> <input type="password" class="input" id="password" data-type="password" placeholder="Enter your password" required onblur="password()"> </div>
                                 <div class="group"> <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span> Keep me Signed in</label> </div>
-                                <div class="group"> <input type="submit" class="button" value="Sign In"> </div>
+                                <div class="group"> <input type="submit" class="button" value="Sign In" onclick="login()"> </div>
                                 <div class="hr"></div>
-                                <div class="foot"> <a href="#">Forgot Password?</a> </div>
                             </div>
                             <div class="sign-up-form">
-                                <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Create your Username"> </div>
-                                <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Create your password"> </div>
-                                <div class="group"> <label for="pass" class="label">Repeat Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Repeat your password"> </div>
-                                <div class="group"> <label for="pass" class="label">Email Address</label> <input id="pass" type="text" class="input" placeholder="Enter your email address"> </div>
-                                <div class="group"> <input type="submit" class="button" value="Sign Up"> </div>
+                                <div class="group"> <label for="user" class="label">Username</label>
+                                    <input id="user" type="text" class="input" placeholder="Create your Username" onblur="user()">
+                                    <span id="name"></span>
+                                </div>
+                                <div class="group"> <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" placeholder="Create your password" onblur="pass()">
+                                    <span id="messpass"></span>
+                                </div>
+                                <div class="group"> <label for="passrp" class="label">Repeat Password</label>
+                                    <input id="passrp" type="password" class="input" data-type="password" placeholder="Repeat your password" onblur="passrp()">
+                                    <span id='message'></span>
+                                </div>
+                                <div class="group"> <label for="mail" class="label">Email Address</label>
+                                    <form id="myForm" action="#">
+                                        <input id="mail" type="email" class="input form-control" placeholder="Enter your email address">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                            with anyone else.</small>
+                                        <div class="group">
+                                            <div class="group"><input type="submit" id="validate" class="button" onclick="register()" value="Sign Up">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
                                 <div class="hr"></div>
                                 <div class="foot"> <label for="tab-1">Already Member?</label> </div>
                             </div>
@@ -254,5 +282,210 @@ a {
             </div>
         </div>
     </div>
+    <script>
+        const register = () => {
+            const username = document.getElementById("user").value;
+            const passwork = document.getElementById("pass").value;
+            const passwork_repeat = document.getElementById("passrp").value;
+            const email = document.getElementById("mail").value;
+            if (!username && !passwork && !email) {
+
+                alert('You have not entered enough information');
+                return;
+            }
+            if (passwork_repeat != passwork && username.length < 4 && password.length < 4 && password_repeat < 4) {
+                document.getElementById('user').style.border = '1px solid red'
+                document.getElementById('name').innerText = 'Name more than 4 character'
+                document.getElementById('pass').style.border = '1px solid red'
+                document.getElementById('messpass').innerText = 'must more than 4 character'
+                document.getElementById('passrp').style.border = '1px solid red'
+                document.getElementById('message').innerText = 'must more than 4 charac'
+                return;
+            }
+            if (!username) {
+                alert('You have not entered enough information');
+
+                return;
+            }
+            if (username.length < 4) {
+                document.getElementById('user').style.border = '1px solid red'
+                var name_mess = document.getElementById('name').innerText = 'Name more than 4 character'
+                return;
+            }
+
+            if (!passwork) {
+                alert('You have not entered enough information');
+
+                return;
+            }
+            if (passwork.length < 4) { ///password > 4 characters
+                document.getElementById('pass').style.border = '1px solid red'
+                document.getElementById('messpass').innerText = 'must more than 4 charac'
+                return;
+            }
+
+            if (!passwork_repeat) {
+                alert('You have not entered enough information');
+
+                return;
+            }
+            if (passwork_repeat.length < 4) { ///pass repeat > 4 characters
+                document.getElementById('passrp').style.border = '1px solid red'
+                document.getElementById('message').innerText = 'must more than 4 charac'
+                return;
+            }
+            if (passwork_repeat != passwork) { ///password = password repeat
+                document.getElementById('passrp').style.border = '1px solid red'
+                document.getElementById('message').innerText = 'password repeat wrong'
+                return;
+            }
+            if (passwork_repeat == passwork) {
+                document.getElementById('passrp').style.border = 'none'
+                document.getElementById('message').innerText = ''
+            }
+            var mailTotal =
+                /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            var mailResult = mailTotal.test(email);
+            if (mailResult == false) {
+                alert('Your email is wrong');
+                return;
+            } else {
+                let infor = {
+                    user: username,
+                    pass: passwork,
+                    mail: email
+                }
+                let member = JSON.parse(localStorage.getItem('people'));
+                if (member == null) {
+                    member = [];
+                }
+                member.push(infor);
+                localStorage.setItem('people', JSON.stringify(member));
+                alert("Regist successfull, please Log In");
+                document.getElementById('user').style.border = 'none';
+                document.getElementById('pass').style.border = 'none';
+                document.getElementById('passrp').style.border = 'none';
+                document.getElementById('user').value = '';
+                document.getElementById('pass').value = '';
+                document.getElementById('passrp').value = '';
+                document.getElementById('mail').value = '';
+
+            }
+
+
+        }
+
+
+        const user = () => {
+            const outName = document.getElementById("user").value;
+            if (!outName) {
+                document.getElementById('user').style.border = '1px solid red';
+                return;
+            } else {
+                document.getElementById('user').style.border = 'none';
+            }
+
+        }
+        const pass = () => {
+            const outpass = document.getElementById("pass").value;
+            if (!outpass) {
+                document.getElementById('pass').style.border = '1px solid red';
+                return;
+            } else {
+                document.getElementById('pass').style.border = 'none';
+            }
+
+        }
+        const passrp = () => {
+            const outpassrp = document.getElementById("passrp").value;
+            if (!outpassrp) {
+                document.getElementById('passrp').style.border = '1px solid red';
+                return;
+            } else {
+                document.getElementById('passrp').style.border = 'none';
+            }
+
+        }
+
+        const mail = () => {
+            const outmail = document.getElementById("mail").value;
+            if (!outmail) {
+                document.getElementById('mail').style.border = '1px solid red';
+                return;
+            } else {
+                document.getElementById('mail').style.border = 'none';
+            }
+        }
+    </script>
+    <script>
+        const login = () => {
+            const userName = document.getElementById("userName").value;
+            const password = document.getElementById("password").value;
+
+            if (!userName && !password) {
+                alert("User doesn't exis");
+                document.getElementById('userName').style.border = '1px solid red';
+                document.getElementById('password').style.border = '1px solid red';
+                return;
+            }
+            if (!userName) {
+                document.getElementById('userName').style.border = '1px solid red';
+                alert('User Name not exist');
+                return;
+            }
+
+            if (!password) {
+                document.getElementById('password').style.border = '1px solid red';
+                alert('Password not exis');
+                return;
+            } else {
+                document.getElementById('userName').style.border = 'none';
+                document.getElementById('password').style.border = 'none';
+            }
+
+            let member = localStorage.getItem('people');
+            if (!member) {
+                alert('menber has not data');
+                return;
+            }
+            let ALLmember = JSON.parse(member);
+            let user = ALLmember.find(e => e.user === userName && e.pass ===
+                password); //so sánh data login vs sign up 
+            if (user) {
+                alert('Login success');
+                location.href = "../homepage/homepage_login.html"
+                return;
+            } else {
+                alert("Can not find user");
+            }
+        }
+    </script>
+    <script>
+        const userName = () => {
+            const checkName = document.getElementById("userName").value;
+            if (!checkName) {
+                document.getElementById('userName').style.border = '1px solid red';
+                return false;
+            } else {
+                document.getElementById('userName').style.border = 'none';
+            }
+
+        }
+
+
+        const password = () => {
+            const checkpassword = document.getElementById("password").value;
+
+            if (!checkpassword) {
+                document.getElementById('password').style.border = '1px solid red';
+                return false;
+            } else {
+                document.getElementById('password').style.border = 'none';
+            }
+
+        }
+    </script>
+
 </body>
+
 </html>

@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -43,9 +45,8 @@
     <header>
 
 
-
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar white top-nav-collapse">
+        <nav class="navbar fixed-top navbar-expand-lg  navbar-light scrolling-navbar white">
 
             <div class="container">
 
@@ -53,9 +54,9 @@
 
                 <a class="navbar-brand font-weight-bold" href="#">
 
-                </a><a class="navbar-brand font-weight-bold" href="../homepage/homepage-v1.html"><i class="fas fa-home" style="color: #007bff;"></i><span class="ml-2">QuickSnack</span></a>
+                    <a class="navbar-brand font-weight-bold" href="../homepage/homepage-v1.html"><i class="fas fa-home" style="color: #007bff;"></i><span class="ml-2">QuickSnack</span></a>
 
-
+                </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -66,7 +67,6 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
 
                     <ul class="navbar-nav ml-auto">
-
 
                         <li class="nav-item">
 
@@ -101,7 +101,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
 
-                                <a class="dropdown-item waves-effect waves-light" href="../login_register_page/login_register.html">Log out</a>
+                                <button onclick="logOut()" class="dropdown-item waves-effect waves-light" href="#">Log out</button>
 
                             </div>
 
@@ -143,30 +143,31 @@
                     <!-- Links -->
                     <ul class="navbar-nav mr-auto">
 
-                        <li class="nav-item dropdown mega-dropdown active">
+                        <li class="nav-item dropdown mega-dropdown">
 
-                            <a onclick="return healthy()" class="nav-link no-caret waves-effect waves-light" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a onclick="return healthy()" class="nav-link no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Healthy snacks</a>
+
                         </li>
 
                         <li class="nav-item dropdown mega-dropdown">
 
-                            <a onclick="return student()" class="nav-link no-caret waves-effect waves-light" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a onclick="return student()" class="nav-link no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Snacks for children</a>
 
                         </li>
 
                         <li class="nav-item dropdown mega-dropdown">
 
-                            <a onclick="return stomach()" class="nav-link no-caret waves-effect waves-light" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a onclick="return stomach()" class="nav-link no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Snacks easy for the stomach    
                             </a>
 
 
                         </li>
-                        <li class="nav-item dropdown mega-dropdown">
+                        <li class="nav-item dropdown mega-dropdown active">
 
-                            <a onclick="return smoothies()" class="nav-link no-caret waves-effect waves-light" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a onclick="return smoothies()" class="nav-link no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Smoothies  
                                 </a>
 
@@ -177,7 +178,7 @@
                     <!-- Links -->
                     <form class="search-form" role="search">
 
-                        <div class="form-group md-form my-0 waves-light waves-effect waves-light">
+                        <div class="form-group md-form my-0 waves-light">
 
                             <input type="text" class="form-control" placeholder="Search">
 
@@ -207,46 +208,46 @@
                         <!-- Filter by category -->
                         <div class="col-md-6 col-lg-12 mb-5">
 
-                            <h5 class="font-weight-bold dark-grey-text"><strong>Category</strong></h5>
+                            <h5 class="font-weight-bold dark-grey-text"><strong>Category</strong></h3>
 
-                            <div class="divider"></div>
+                                <div class="divider"></div>
 
-                            <!-- Radio group -->
-                            <div class="form-group ">
+                                <!-- Radio group -->
+                                <div class="form-group ">
 
-                                <input class="form-check-input" name="group100" type="radio" id="radio100" checked="">
+                                    <input class="form-check-input" name="group100" type="radio" id="radio100">
 
-                                <label for="radio100" class="form-check-label dark-grey-text">Healthy snacks</label>
+                                    <label for="radio100" class="form-check-label dark-grey-text">Healthy snacks</label>
 
-                            </div>
+                                </div>
 
-                            <div class="form-group">
+                                <div class="form-group">
 
-                                <input class="form-check-input" name="group100" type="radio" id="radio101">
+                                    <input class="form-check-input" name="group100" type="radio" id="radio101">
 
-                                <label for="radio101" class="form-check-label dark-grey-text">Snacks for children</label>
+                                    <label for="radio101" class="form-check-label dark-grey-text">Snacks for children</label>
 
-                            </div>
+                                </div>
 
-                            <div class="form-group">
+                                <div class="form-group">
 
-                                <input class="form-check-input" name="group100" type="radio" id="radio102">
+                                    <input class="form-check-input" name="group100" type="radio" id="radio102">
 
-                                <label for="radio102" class="form-check-label dark-grey-text">Snacks easy for the stomach</label>
+                                    <label for="radio102" class="form-check-label dark-grey-text">Snacks easy for the stomach</label>
 
-                            </div>
+                                </div>
 
-                            <div class="form-group">
+                                <div class="form-group">
 
-                                <input class="form-check-input" name="group100" type="radio" id="radio103">
+                                    <input class="form-check-input" name="group100" type="radio" id="radio103" checked>
 
-                                <label for="radio103" class="form-check-label dark-grey-text">Smoothie</label>
+                                    <label for="radio103" class="form-check-label dark-grey-text">Smoothie</label>
 
-                            </div>
+                                </div>
 
 
 
-                            <!-- Radio group -->
+                                <!-- Radio group -->
                         </div>
 
                         <!-- Filter by category -->
@@ -294,7 +295,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay">
 
-                                    <img src="https://cdn.daotaobeptruong.vn/wp-content/uploads/2020/06/bun-rieu-cua.jpg" class="img-fluid" alt="">
+                                    <img src="https://www.disneycooking.com/wp-content/uploads/2020/09/tra-sua-tran-chau.jpg" class="img-fluid" alt="">
 
                                     <a>
 
@@ -309,7 +310,9 @@
                                 <div class="card-body">
 
                                     <!-- Category & Title -->
-                                    <h5 class="card-title mb-1"><strong><a href="../product/bún riêu.html" class="dark-grey-text"> Bun Rieu</a></strong></h5>
+                                    <h5 class="card-title mb-1"><strong><a href="../product/Pearl milk tea.html" class="dark-grey-text"> 
+                                        
+Pearl milk tea</a></strong></h5>
 
                                     <!-- Rating -->
                                     <ul class="rating">
@@ -357,7 +360,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay">
 
-                                    <img src="http://file.hstatic.net/1000206480/file/img_0986_grande.jpg" class="img-fluid" alt="">
+                                    <img src="https://classiccoffee.com.vn/files/news/tim-hieu-ve-mon-ca-phe-trung-thom-ngon-cung-classic-coffee-jfe.jpg" class="img-fluid" alt="">
 
                                     <a>
 
@@ -372,7 +375,7 @@
                                 <div class="card-body">
 
                                     <!-- Category & Title -->
-                                    <h5 class="card-title mb-1"><strong><a href="../product/Bò áp chảo phô mai ăn với bánh m.html" class="dark-grey-text"> Bread Pan</a></strong></h5>
+                                    <h5 class="card-title mb-1"><strong><a href="../product/Egg Coffee.html" class="dark-grey-text"> Egg Coffee</a></strong></h5>
 
                                     <!-- Rating -->
                                     <ul class="rating">
@@ -419,7 +422,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay">
 
-                                    <img src="https://www.hoidaubepaau.com/wp-content/uploads/2018/11/banh-giay-nhan-dau-xanh.jpg" class="img-fluid" alt="">
+                                    <img src="https://thucthan.com/media/2018/06/sinh-to-bo/sinh-to-bo.jpg" class="img-fluid" alt="">
 
                                     <a>
 
@@ -434,7 +437,7 @@
                                 <div class="card-body">
 
                                     <!-- Category & Title -->
-                                    <h5 class="card-title mb-1"><strong><a href="../product/Cake Thick Rolls.html" class="dark-grey-text">Cake Thick Rolls</a></strong></h5>
+                                    <h5 class="card-title mb-1"><strong><a href="../product/Avocado Smoothie.html" class="dark-grey-text">Avocado Smoothie</a></strong></h5>
 
                                     <!-- Rating -->
                                     <ul class="rating">
@@ -473,6 +476,8 @@
                         <!-- Grid column -->
 
                     </div>
+                    <!-- Grid row -->
+
                     <!-- Grid row -->
                     <div class="row">
 
@@ -485,7 +490,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay">
 
-                                    <img src="https://vcdn-ngoisao.vnecdn.net/2016/05/01/kccs-8275-1462114956.jpg" class="img-fluid" alt="">
+                                    <img src="http://cacmonchengon.weebly.com/uploads/1/0/1/4/101486906/cach-nau-che-thung_orig.jpg" class="img-fluid" alt="">
 
                                     <a>
 
@@ -500,8 +505,7 @@
                                 <div class="card-body">
 
                                     <!-- Category & Title -->
-                                    <h5 class="card-title mb-1"><strong><a href="../product/Crispy Lotus.html" class="dark-grey-text">
-                                        Crispy lotus root</a></strong></h5>
+                                    <h5 class="card-title mb-1"><strong><a href="../product/chè thưng.html" class="dark-grey-text">Thung Tea</a></strong></h5>
 
                                     <!-- Rating -->
                                     <ul class="rating">
@@ -549,7 +553,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay">
 
-                                    <img src="https://thucthan.com/media/2018/03/kimbap/kimbap.jpg" class="img-fluid" alt="">
+                                    <img src="https://cdn.cet.edu.vn/wp-content/uploads/2020/03/dalgona-dung-dieu-voi-lop-bot-kem-sanh-min.jpg" class="img-fluid" alt="">
 
                                     <a>
 
@@ -564,7 +568,7 @@
                                 <div class="card-body">
 
                                     <!-- Category & Title -->
-                                    <h5 class="card-title mb-1"><strong><a href="../product/Kimbap.html" class="dark-grey-text">Kim Bap</a></strong></h5>
+                                    <h5 class="card-title mb-1"><strong><a href="../product/Cà phê bọt biển.html" class="dark-grey-text">Sponge Coffee</a></strong></h5>
 
                                     <!-- Rating -->
                                     <ul class="rating">
@@ -611,7 +615,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay">
 
-                                    <img src="https://andam3in1.vn/data/media/1826/images/2019/122019/banh-flan-tu-sua-me.jpg" class="img-fluid" alt="">
+                                    <img src="https://meta.vn/Data/image/2020/09/01/nuoc-ep-tao-co-tac-dung-gi-1.jpg" class="img-fluid" alt="">
 
                                     <a>
 
@@ -626,7 +630,8 @@
                                 <div class="card-body">
 
                                     <!-- Category & Title -->
-                                    <h5 class="card-title mb-1"><strong><a href="../product/Bánh Flan.html" class="dark-grey-text">Flan Cake</a></strong></h5>
+                                    <h5 class="card-title mb-1"><strong><a href="../product/Apple juice.html" class="dark-grey-text">
+                                        Apple juice</a></strong></h5>
 
                                     <!-- Rating -->
                                     <ul class="rating">
@@ -668,6 +673,10 @@
                     </div>
                     <!-- Grid row -->
 
+                    <!-- Grid row -->
+                    <!-- Grid row -->
+
+
                 </section>
                 <!-- Products Grid -->
 
@@ -679,7 +688,7 @@
     </div>
     <!-- Main Container -->
 
-
+    </main>
 
     <!-- Footer -->
     <footer class="page-footer text-center text-md-left stylish-color-dark pt-0">
@@ -870,7 +879,6 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../../js/mdb.min.js"></script>
-    <div class="hiddendiv common"></div>
 
     <script type="text/javascript">
         /* WOW.js init */
@@ -932,8 +940,6 @@
         // SideNav Initialization
         $(".button-collapse").sideNav();
     </script>
-
-
 
 </body>
 

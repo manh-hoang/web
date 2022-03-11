@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -43,9 +45,8 @@
     <header>
 
 
-
         <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light scrolling-navbar white top-nav-collapse">
+        <nav class="navbar fixed-top navbar-expand-lg  navbar-light scrolling-navbar white">
 
             <div class="container">
 
@@ -53,9 +54,9 @@
 
                 <a class="navbar-brand font-weight-bold" href="#">
 
-                </a><a class="navbar-brand font-weight-bold" href="../homepage/homepage-v1.html"><i class="fas fa-home" style="color: #007bff;"></i><span class="ml-2">QuickSnack</span></a>
+                    <a class="navbar-brand font-weight-bold" href="../homepage/homepage-v1.html"><i class="fas fa-home" style="color: #007bff;"></i><span class="ml-2">QuickSnack</span></a>
 
-
+                </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -67,12 +68,12 @@
 
                     <ul class="navbar-nav ml-auto">
 
-
                         <li class="nav-item">
 
                             <a class="nav-link waves-effect waves-light dark-grey-text font-weight-bold" href="../display/display.html">
 
-                                <i class="far fa-image blue-text"></i>Gallery
+                                <i class="far fa-image blue-text"></i> Gallery
+
 
                                 <span class="sr-only">(current)</span>
 
@@ -143,22 +144,23 @@
                     <!-- Links -->
                     <ul class="navbar-nav mr-auto">
 
-                        <li class="nav-item dropdown mega-dropdown active">
-
-                            <a onclick="return healthy()" class="nav-link no-caret waves-effect waves-light" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Healthy snacks</a>
-                        </li>
-
                         <li class="nav-item dropdown mega-dropdown">
 
-                            <a onclick="return student()" class="nav-link no-caret waves-effect waves-light" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a onclick="return healthy()" class="nav-link no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Healthy snacks</a>
+
+                        </li>
+
+                        <li class="nav-item dropdown mega-dropdown active">
+
+                            <a onclick="return student()" class="nav-link no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Snacks for children</a>
 
                         </li>
 
                         <li class="nav-item dropdown mega-dropdown">
 
-                            <a onclick="return stomach()" class="nav-link no-caret waves-effect waves-light" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a onclick="return stomach()" class="nav-link no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Snacks easy for the stomach    
                             </a>
 
@@ -166,7 +168,7 @@
                         </li>
                         <li class="nav-item dropdown mega-dropdown">
 
-                            <a onclick="return smoothies()" class="nav-link no-caret waves-effect waves-light" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a onclick="return smoothies()" class="nav-link no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Smoothies  
                                 </a>
 
@@ -177,7 +179,7 @@
                     <!-- Links -->
                     <form class="search-form" role="search">
 
-                        <div class="form-group md-form my-0 waves-light waves-effect waves-light">
+                        <div class="form-group md-form my-0 waves-light">
 
                             <input type="text" class="form-control" placeholder="Search">
 
@@ -191,7 +193,6 @@
             </div>
 
         </nav>
-
         <!-- Navbar -->
         <div class="row pt-4">
 
@@ -207,46 +208,46 @@
                         <!-- Filter by category -->
                         <div class="col-md-6 col-lg-12 mb-5">
 
-                            <h5 class="font-weight-bold dark-grey-text"><strong>Category</strong></h5>
+                            <h5 class="font-weight-bold dark-grey-text"><strong>Category</strong></h3>
 
-                            <div class="divider"></div>
+                                <div class="divider"></div>
 
-                            <!-- Radio group -->
-                            <div class="form-group ">
+                                <!-- Radio group -->
+                                <div class="form-group ">
 
-                                <input class="form-check-input" name="group100" type="radio" id="radio100" checked="">
+                                    <input class="form-check-input" name="group100" type="radio" id="radio100">
 
-                                <label for="radio100" class="form-check-label dark-grey-text">Healthy snacks</label>
+                                    <label for="radio100" class="form-check-label dark-grey-text">Healthy snacks</label>
 
-                            </div>
+                                </div>
 
-                            <div class="form-group">
+                                <div class="form-group">
 
-                                <input class="form-check-input" name="group100" type="radio" id="radio101">
+                                    <input class="form-check-input" name="group100" type="radio" id="radio101" checked>
 
-                                <label for="radio101" class="form-check-label dark-grey-text">Snacks for children</label>
+                                    <label for="radio101" class="form-check-label dark-grey-text">Snacks for children</label>
 
-                            </div>
+                                </div>
 
-                            <div class="form-group">
+                                <div class="form-group">
 
-                                <input class="form-check-input" name="group100" type="radio" id="radio102">
+                                    <input class="form-check-input" name="group100" type="radio" id="radio102">
 
-                                <label for="radio102" class="form-check-label dark-grey-text">Snacks easy for the stomach</label>
+                                    <label for="radio102" class="form-check-label dark-grey-text">Snacks easy for the stomach</label>
 
-                            </div>
+                                </div>
 
-                            <div class="form-group">
+                                <div class="form-group">
 
-                                <input class="form-check-input" name="group100" type="radio" id="radio103">
+                                    <input class="form-check-input" name="group100" type="radio" id="radio103">
 
-                                <label for="radio103" class="form-check-label dark-grey-text">Smoothie</label>
+                                    <label for="radio103" class="form-check-label dark-grey-text">Smoothie</label>
 
-                            </div>
+                                </div>
 
 
 
-                            <!-- Radio group -->
+                                <!-- Radio group -->
                         </div>
 
                         <!-- Filter by category -->
@@ -281,7 +282,6 @@
 
                 <!-- Products Grid -->
                 <section class="section pt-4">
-
                     <!-- Grid row -->
                     <div class="row">
 
@@ -357,7 +357,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay">
 
-                                    <img src="http://file.hstatic.net/1000206480/file/img_0986_grande.jpg" class="img-fluid" alt="">
+                                    <img src="https://vietreview.vn/wp-content/uploads/2020/08/cach-lam-banh-chuoi-chien-thom-ngon-don-gian.jpg" class="img-fluid" alt="">
 
                                     <a>
 
@@ -372,7 +372,8 @@
                                 <div class="card-body">
 
                                     <!-- Category & Title -->
-                                    <h5 class="card-title mb-1"><strong><a href="../product/Bò áp chảo phô mai ăn với bánh m.html" class="dark-grey-text"> Bread Pan</a></strong></h5>
+                                    <h5 class="card-title mb-1"><strong><a href="../product/Crispy banana.html" class="dark-grey-text"> 
+                                        Crispy banana</a></strong></h5>
 
                                     <!-- Rating -->
                                     <ul class="rating">
@@ -419,7 +420,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay">
 
-                                    <img src="https://www.hoidaubepaau.com/wp-content/uploads/2018/11/banh-giay-nhan-dau-xanh.jpg" class="img-fluid" alt="">
+                                    <img src="https://ytuongvietnam.com/wp-content/uploads/2019/07/cach-lam-banh-mi-sandwich-1-600x400.jpg" class="img-fluid" alt="">
 
                                     <a>
 
@@ -434,7 +435,7 @@
                                 <div class="card-body">
 
                                     <!-- Category & Title -->
-                                    <h5 class="card-title mb-1"><strong><a href="../product/Cake Thick Rolls.html" class="dark-grey-text">Cake Thick Rolls</a></strong></h5>
+                                    <h5 class="card-title mb-1"><strong><a href="../product/Sandwich.html" class="dark-grey-text">Sandwich</a></strong></h5>
 
                                     <!-- Rating -->
                                     <ul class="rating">
@@ -473,7 +474,6 @@
                         <!-- Grid column -->
 
                     </div>
-                    <!-- Grid row -->
                     <div class="row">
 
                         <!-- Grid column -->
@@ -485,7 +485,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay">
 
-                                    <img src="https://vcdn-ngoisao.vnecdn.net/2016/05/01/kccs-8275-1462114956.jpg" class="img-fluid" alt="">
+                                    <img src="https://icdn.dantri.com.vn/2018/photo-1-1514967077665.jpg" class="img-fluid" alt="">
 
                                     <a>
 
@@ -500,8 +500,7 @@
                                 <div class="card-body">
 
                                     <!-- Category & Title -->
-                                    <h5 class="card-title mb-1"><strong><a href="../product/Crispy Lotus.html" class="dark-grey-text">
-                                        Crispy lotus root</a></strong></h5>
+                                    <h5 class="card-title mb-1"><strong><a href="../product/seaweed snack.html" class="dark-grey-text"> Seaweed Snack</a></strong></h5>
 
                                     <!-- Rating -->
                                     <ul class="rating">
@@ -549,7 +548,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay">
 
-                                    <img src="https://thucthan.com/media/2018/03/kimbap/kimbap.jpg" class="img-fluid" alt="">
+                                    <img src="https://bokhocomai.com/wp-content/uploads/2020/04/banh-ga-chien-xu-gion-ngon-600x400-1.jpg" class="img-fluid" alt="">
 
                                     <a>
 
@@ -564,7 +563,7 @@
                                 <div class="card-body">
 
                                     <!-- Category & Title -->
-                                    <h5 class="card-title mb-1"><strong><a href="../product/Kimbap.html" class="dark-grey-text">Kim Bap</a></strong></h5>
+                                    <h5 class="card-title mb-1"><strong><a href="../product/Crispy mushroom cake.html" class="dark-grey-text"> Crispy mushroom cake</a></strong></h5>
 
                                     <!-- Rating -->
                                     <ul class="rating">
@@ -611,7 +610,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay">
 
-                                    <img src="https://andam3in1.vn/data/media/1826/images/2019/122019/banh-flan-tu-sua-me.jpg" class="img-fluid" alt="">
+                                    <img src="https://cdn.daylambanh.edu.vn/wp-content/uploads/2019/08/banh-snack-khoai-tay-nong-hoi-600x400.jpg" class="img-fluid" alt="">
 
                                     <a>
 
@@ -626,7 +625,7 @@
                                 <div class="card-body">
 
                                     <!-- Category & Title -->
-                                    <h5 class="card-title mb-1"><strong><a href="../product/Bánh Flan.html" class="dark-grey-text">Flan Cake</a></strong></h5>
+                                    <h5 class="card-title mb-1"><strong><a href="../product/POTATO Snack.html" class="dark-grey-text">Potato Snack </a></strong></h5>
 
                                     <!-- Rating -->
                                     <ul class="rating">
@@ -649,7 +648,6 @@
                                         <div class="row mb-0">
 
                                             <span class="float-left"><strong>1439$</strong></span>
-
 
 
                                         </div>
@@ -667,7 +665,6 @@
 
                     </div>
                     <!-- Grid row -->
-
                 </section>
                 <!-- Products Grid -->
 
@@ -679,7 +676,7 @@
     </div>
     <!-- Main Container -->
 
-
+    </main>
 
     <!-- Footer -->
     <footer class="page-footer text-center text-md-left stylish-color-dark pt-0">
@@ -870,7 +867,6 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../../js/mdb.min.js"></script>
-    <div class="hiddendiv common"></div>
 
     <script type="text/javascript">
         /* WOW.js init */
@@ -932,8 +928,6 @@
         // SideNav Initialization
         $(".button-collapse").sideNav();
     </script>
-
-
 
 </body>
 
